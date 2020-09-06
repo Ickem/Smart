@@ -1,0 +1,85 @@
+.quote{
+    padding: 105px 0;
+}
+
+.quote h1{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 24px;
+    color: #636c6c;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.quote blockquote{
+    font-size: 24px;
+    line-height: 24px;
+    color: #8c9494;
+    font-style: italic;
+}
+
+.quote blockquote cite{
+    color: #5dca88;
+}
+
+.slider-quote {
+    overflow:hidden; /* Скрываем всё что за блоком слайдера */
+    position:relative;
+    width: 660px;
+    height:350px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.slider-quote .slides {
+    position:relative;
+    transition:1s; /* Задаем время изменения блока, отвечает за плавную прокрутку */
+}
+.slider-quote .slides .slide {
+    float:left;
+    display:block;
+    padding: 0 20px;
+    max-width: 660px;
+}
+
+.slider-quote .slides .slide img{
+    width:120px;
+    height:120px;
+    border-radius:90px;
+    margin-bottom: 45px;
+}
+
+
+.slider-quote .navigation {
+    position:absolute;
+    width:100%;
+    bottom:40px;
+    left:0;
+    z-index:1;
+    cursor:pointer;
+}
+
+.slider-quote .navigation .dot{
+    display:inline-block;
+    width:16px;
+    height:16px;
+    background:#666666;
+    cursor:pointer;
+    border-radius:16px;
+    margin:0 20px;
+    border:1px solid #666666;
+}
+
+.slider-quote .navigation .active{
+    background:#fff;
+}
+
+@media (max-width: 660px) {
+    .slider-quote {
+        width: 320px;
+        margin: 0 auto;
+    }
+    .slider-quote .slides .slide {
+         width: 320px;
+    }
+}

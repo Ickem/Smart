@@ -1,0 +1,88 @@
+@font-face {
+    font-family:"Socialico";
+    src:url("../fonts/Socialico.eot?") format("eot"),
+    url("../fonts/Socialico.woff") format("woff"),
+    url("../fonts/Socialico.ttf") format("truetype");
+    font-weight:normal;font-style:normal;
+}
+
+.footer{
+    height: 182px;
+    background-color: #2d312f;
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content h1{
+    font-size: 24px;
+    line-height: 24px;
+    color: #8c9494;
+    margin-bottom: 40px;
+}
+
+.footer-content .social{
+    font-family:"Socialico";
+    font-size: 60px;
+    line-height: 24px;
+    color:#5d6461;
+    letter-spacing: 17px;
+    padding-left: 17px;
+}
+
+.footer-content .social a:hover{
+    color:#fff;
+}
+
+.footer-content .links{
+    margin-top: 60px;
+}
+
+.footer-content ul li{
+    font-size: 14px;
+    line-height: 24px;
+    color: #8c9494;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-content a{
+    text-decoration: none;
+}
+
+.footer-content a:visited{
+    color: #8c9494;
+}
+
+.footer-content ul li a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 580px) {
+    .footer-content .social{
+        letter-spacing: 5px;
+    }
+    .footer-content ul li{
+        margin: 0;
+    }
+    .footer-content ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: space-around;
+        list-style: none;
+        width: 300px;
+        height: 70px;
+    }
+
+    .footer-content h1{
+        font-size: 20px;
+    }
+}
